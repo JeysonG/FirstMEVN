@@ -26,7 +26,7 @@ app.use('/item', itemRoute);
 
 //static files
 
-app.use(express(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(3000, () => {
     console.log('Server on port', 30000);
